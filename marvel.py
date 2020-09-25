@@ -26,24 +26,3 @@ class Person:
         self.eat(1)
         person.mood = 'good'
         person.eat(1)
-
-
-peter = Person('Peter', 'M')
-mary = Person('Mary', 'F')
-
-pprint(Person.__dict__)
-
-pprint(peter.__dict__)
-pprint(mary.__dict__)
-
-peter.pocket.append('coin')
-
-print(peter.pocket)
-print(mary.pocket)
-
-pprint(peter.__dict__)
-pprint(mary.__dict__)
-
-peter.date(mary)
-
-print(peter.mood, mary.mood)
